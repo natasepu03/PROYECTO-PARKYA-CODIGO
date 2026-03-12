@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/ParkYa/wwwroot/css/login.css">
+</head>
+
+<body>
+
+    <div class="registro-container">
+
+        <button class="btn-volver" onclick="location.href='index.html'">← Volver</button>
+
+        <img src="/ParkYa/wwwroot/assets/logo1.jpeg" class="logo">
+
+        <h1>Bienvenido de nuevo</h1>
+        <p class="sub">Completa tus datos para ingresar PARKYA</p>
+
+        <form>
+            <div class="form-grid">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="correo@example.com" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Escribe tu contraseña" minlength="6"
+                    required>
+
+                <button class="btn-submit" type="submit">Iniciar sesion</button>
+
+            </div>
+        </form>
+
+    </div>
+    <script>
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault(); // Evita que el form se envíe automáticamente
+
+            if (this.checkValidity()) {
+                // Si el formulario es válido → redirige
+                window.location.href = "cliente.html"; // <-- pon aquí tu ruta
+            }
+            // Si NO es válido, el navegador mostrará los errores automáticamente
+        });
+    </script>
+
+</body>
+
+</html>
