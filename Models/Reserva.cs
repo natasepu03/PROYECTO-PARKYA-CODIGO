@@ -12,7 +12,7 @@ namespace ParkYa.Models
 
         public TimeSpan hora_salida { get; set; }
 
-        public required string estado { get; set; }
+        public Estado Estado { get; set; }
 
         public int Usuario_id_usuario { get; set; }
 
@@ -20,4 +20,10 @@ namespace ParkYa.Models
 
         public int Vehiculo_id_vehiculo { get; set; }
     }
+    public enum Estado
+{
+    Activo,
+    Pendiente,
+    Cancelado
+}
 }
