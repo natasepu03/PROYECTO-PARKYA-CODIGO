@@ -6,12 +6,12 @@ namespace ParkYa.Models
 
         public int cod_parqueadero { get; set; }
 
-        public required string  direccion { get; set; }
+        public string direccion { get; set; }  = string.Empty;
 
-        public required string nombre { get; set; }
+        public required string nombre { get; set; } = string.Empty;
 
         public int total_cupos { get; set; }
 
-        public required string tipo_espacio { get; set; }
+        public required string tipo_espacio { get; set; }  = string.Empty;
     }
 }

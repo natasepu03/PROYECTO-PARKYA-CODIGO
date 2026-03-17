@@ -42,3 +42,4 @@ C:\Users\USUARIO\OneDrive\Documentos\PROYECTO PARKYA CODIGO\ParkYa\obj\Debug\net
 C:\Users\USUARIO\OneDrive\Documentos\PROYECTO PARKYA CODIGO\ParkYa\obj\Debug\net8.0\ParkYa.pdb
 C:\Users\USUARIO\OneDrive\Documentos\PROYECTO PARKYA CODIGO\ParkYa\obj\Debug\net8.0\ParkYa.genruntimeconfig.cache
 C:\Users\USUARIO\OneDrive\Documentos\PROYECTO PARKYA CODIGO\ParkYa\obj\Debug\net8.0\ref\ParkYa.dll
+C:\Users\USUARIO\OneDrive\Documentos\PROYECTO PARKYA CODIGO\ParkYa\obj\Debug\net8.0\ParkYa.sourcelink.json

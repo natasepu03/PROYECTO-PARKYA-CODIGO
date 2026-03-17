@@ -2,7 +2,7 @@ namespace ParkYa.Models
 {
     public class TipoVehiculo
     {
-        public int idTipo_vehiculo { get; set; }
+        public int TipoVehiculoId { get; set; }
         public string cod_tipoVehiculo { get; set; } = string.Empty;
         public string nombre_tipo { get; set; } = string.Empty;
 

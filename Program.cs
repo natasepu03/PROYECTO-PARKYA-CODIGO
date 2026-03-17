@@ -4,16 +4,16 @@ using ParkYa.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Agregar servicios al contenedor
+
 builder.Services.AddControllersWithViews();
 
-// Conexión a MySQL
+
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<ParkYaDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-// Habilitar sesiones (para login)
+
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -38,10 +38,9 @@ app.UseRouting();
 app.UseSession();
 app.UseAuthorization();
 
-// Ruta principal
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Auth}/{action=Login}/{id?}");
+    pattern: "{controller=Autenticacion}/{action=Login}/{id?}");
 
 app.Run();
 

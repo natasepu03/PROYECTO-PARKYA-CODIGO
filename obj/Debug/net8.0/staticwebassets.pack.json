@@ -57,6 +57,34 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\PROYECTO PARKYA CODIGO\\ParkYa\\wwwroot\\html\\admin.html",
+      "PackagePath": "staticwebassets\\html\\admin.html"
+    },
+    {
+      "Id": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\PROYECTO PARKYA CODIGO\\ParkYa\\wwwroot\\html\\cliente.html",
+      "PackagePath": "staticwebassets\\html\\cliente.html"
+    },
+    {
+      "Id": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\PROYECTO PARKYA CODIGO\\ParkYa\\wwwroot\\html\\empleado.html",
+      "PackagePath": "staticwebassets\\html\\empleado.html"
+    },
+    {
+      "Id": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\PROYECTO PARKYA CODIGO\\ParkYa\\wwwroot\\html\\index.html",
+      "PackagePath": "staticwebassets\\html\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\PROYECTO PARKYA CODIGO\\ParkYa\\wwwroot\\html\\login.html",
+      "PackagePath": "staticwebassets\\html\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\PROYECTO PARKYA CODIGO\\ParkYa\\wwwroot\\html\\recuperacionC.html",
+      "PackagePath": "staticwebassets\\html\\recuperacionC.html"
+    },
+    {
+      "Id": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\PROYECTO PARKYA CODIGO\\ParkYa\\wwwroot\\html\\registro.html",
+      "PackagePath": "staticwebassets\\html\\registro.html"
+    },
+    {
       "Id": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\PROYECTO PARKYA CODIGO\\ParkYa\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

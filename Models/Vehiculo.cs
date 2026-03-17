@@ -16,7 +16,7 @@ namespace ParkYa.Models
 
         public int Tipo_vehiculo_idTipo_vehiculo { get; set; }
 
-        public required Usuario Usuario { get; set; }
+        public  Usuario? Usuario { get; set; }
 
 
     }
