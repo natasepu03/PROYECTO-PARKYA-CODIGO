@@ -1,3 +1,7 @@
+@{
+    Layout = null;
+}
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,16 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicia sesion</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/ParkYa/wwwroot/css/login.css">
+    <link rel="stylesheet" href="@Url.Content("~/ParkYa/wwwroot/css/login.css")">
 </head>
 
 <body>
 
     <div class="registro-container">
 
-        <button class="btn-volver" onclick="location.href='index.html'">← Volver</button>
+        <button class="btn-volver" onclick="location.href='@Url.Content("~/index.html")'">← Volver</button>
 
-        <img src="/ParkYa/wwwroot/assets/logo1.jpeg" class="logo">
+        <img src="@Url.Content("~/ParkYa/wwwroot/assets/logo1.jpeg")" class="logo">
 
         <h1>Bienvenido de nuevo</h1>
         <p class="sub">Completa tus datos para ingresar PARKYA</p>
@@ -24,10 +28,10 @@
             <div class="form-grid">
 
                 <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="correo@example.com" required>
+                <input type="email" id="email" name="correo" placeholder="correo@example.com" required>
 
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" placeholder="Escribe tu contraseña" minlength="6"
+                <input type="password" id="password" name="contraseña" placeholder="Escribe tu contraseña" minlength="6"
                     required>
 
                 <button class="btn-submit" type="submit">Iniciar sesion</button>
@@ -42,7 +46,7 @@
 
             if (this.checkValidity()) {
                 // Si el formulario es válido → redirige
-                window.location.href = "cliente.html"; // <-- pon aquí tu ruta
+                window.location.href = "@Url.Content("~/cliente.html")";
             }
             // Si NO es válido, el navegador mostrará los errores automáticamente
         });
