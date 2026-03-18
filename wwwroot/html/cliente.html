@@ -1,34 +1,35 @@
+@{
+    ViewData["Title"] = "Parqueadero - Cliente";
+}
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parqueadero - Cliente</title>
+    <title>@ViewData["Title"]</title>
 
-    <link rel="stylesheet" href="/ParkYa/wwwroot/css/cliente.css">
+    <link rel="stylesheet" href="~/css/cliente.css">
 </head>
 
 <body>
 
     <header class="header">
 
-        <!-- IZQUIERDA -->
         <div class="left-header">
-            <img src="/ParkYa/wwwroot/assets/logo1.jpeg" class="logo-img">
+            <img src="~/assets/logo1.jpeg" class="logo-img">
             <div class="welcome-text">
                 <h2>Bienvenido, <span id="nombreCliente">Juan Pérez</span></h2>
                 <p>Tu parqueadero, a un clic de distancia</p>
             </div>
         </div>
 
-        <!-- CENTRO: fecha y hora -->
         <div class="fecha-hora">
             <span id="fecha"></span><br>
             <span id="hora"></span>
         </div>
 
-        <!-- DERECHA -->
         <div class="right-header">
             <button id="btnEditar" class="btn-nav">Editar Perfil</button>
             <button id="btnSalir" class="btn-nav salir">Salir</button>
@@ -130,8 +131,7 @@
 
     </main>
 
-
-    <!-- ================= MODAL EDITAR PERFIL ================= -->
+    <!-- ================= MODAL ================= -->
     <div class="modal" id="modalEditar">
         <div class="modal-content">
             <span class="close" id="closeModal">&times;</span>
@@ -153,16 +153,13 @@
         </div>
     </div>
 
-    <!-- ================= MENSAJE DE ÉXITO ================= -->
     <div id="mensajeExito" class="mensaje-exito">
         ✔️ Sus cambios se han guardado exitosamente
     </div>
 
-
-    <!-- ==================== JAVASCRIPT ===================== -->
+    <!-- ================= JAVASCRIPT ================= -->
     <script>
 
-        /* FECHA / HORA */
         function actualizarFechaHora() {
             const ahora = new Date();
 
@@ -175,14 +172,10 @@
         setInterval(actualizarFechaHora, 1000);
         actualizarFechaHora();
 
-
-        /* BOTÓN SALIR */
         document.getElementById("btnSalir").onclick = () => {
             window.location.href = "login.html";
         };
 
-
-        /* MODAL */
         const modal = document.getElementById("modalEditar");
         const btnEditar = document.getElementById("btnEditar");
         const closeModal = document.getElementById("closeModal");
@@ -198,8 +191,6 @@
 
         closeModal.onclick = () => modal.style.display = "none";
 
-
-        /* GUARDAR CAMBIOS PERFIL */
         document.getElementById("guardarCambios").onclick = () => {
 
             document.getElementById("infoNombre").textContent = document.getElementById("editNombre").value;
